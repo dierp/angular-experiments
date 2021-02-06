@@ -44,9 +44,13 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
+              "outputPath": "dist/prod",
               "optimization": true,
               "outputHashing": "all",
-              "sourceMap": false,
+              "sourceMap": {
+                "scripts": true,
+                "hidden": true
+              },
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
